@@ -32,6 +32,8 @@ body {
 	line-height: 1;
 }
 
+
+
 ol, ul {
 	list-style: none;
 }
@@ -81,7 +83,7 @@ input, select, textarea {
 		-ms-overflow-style: scrollbar;
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 2000px) {
 
 		html, body {
 			min-width: 320px;
@@ -96,6 +98,13 @@ input, select, textarea {
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
+	.logo {
+    display: block; /* Asegura que el logo sea un bloque */
+    margin: 0 auto; /* Centra el logo horizontalmente */
+    width: auto; /* Permite ajustar el ancho dinámicamente */
+    height: 500px; /* Ajusta la altura según lo que necesites */
+    max-width: none; /* Elimina restricciones de tamaño */
+}
 
 	body {
 		background: #312450;
@@ -111,6 +120,7 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
 
 /* Type */
 
@@ -138,7 +148,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 1500px) {
 
 			body, input, select, textarea {
 				font-size: 11pt;
@@ -234,7 +244,7 @@ input, select, textarea {
 		font-size: 0.6em;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 1500px) {
 
 		h1 {
 			font-size: 2em;
@@ -1976,6 +1986,7 @@ input, select, textarea {
 					opacity: 0.1;
 				}
 
+
 /* Features */
 
 	.features {
@@ -2523,7 +2534,7 @@ input, select, textarea {
 			width: 2.5em;
 			height: 2.5em;
 			display: block;
-			background: #ffffff;
+			background: #bedb04;
 			border-radius: 100%;
 			color: #312450;
 			text-align: center;
@@ -2552,7 +2563,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: #161717;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -2675,6 +2686,7 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1em;
 		padding-left: 0;
+		position: relative; /* Asegura que el contenedor sea el contexto de posicionamiento */
 	}
 
 		ul.actions li {
@@ -2734,6 +2746,12 @@ input, select, textarea {
 			ul.actions.fit.stacked {
 				width: 100%;
 			}
+
+		ul.actions .button.scrolly {
+			position: absolute;
+			left: 50%; /* Mueve el botón al centro horizontal */
+			transform: translateX(-50%); /* Ajusta el desplazamiento para centrar */
+		}
 
 		@media screen and (max-width: 480px) {
 
@@ -3208,7 +3226,7 @@ input, select, textarea {
 		.wrapper > .inner {
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
-			width: 75em;
+			text-align: center;
 		}
 
 			@media screen and (max-width: 1680px) {
@@ -3240,7 +3258,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #050506;
 		}
 
 		.wrapper.style1-alt {
@@ -3248,7 +3266,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #050506;
 		}
 
 		.wrapper.style2-alt {
@@ -3256,7 +3274,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #050506;
 		}
 
 		.wrapper.style3-alt {
@@ -3524,7 +3542,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #719c1a;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3737,14 +3755,14 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			color: rgba(245, 242, 242, 0.253);
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
 			line-height: 1.75;
 			outline: 0;
-			padding: 1.35em 0;
+			padding: 1.98em 0;
 			position: relative;
 			text-decoration: none;
 			text-transform: uppercase;
